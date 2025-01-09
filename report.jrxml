@@ -1,0 +1,112 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="report" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c9c5642a-b4d9-4755-a3ac-1e54b0768f8b">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<query language="SQL"><![CDATA[SELECT * FROM student]]></query>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="name"/>
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="age" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="age"/>
+		<property name="com.jaspersoft.studio.field.label" value="age"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="address"/>
+		<property name="com.jaspersoft.studio.field.label" value="address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="mobile" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="mobile"/>
+		<property name="com.jaspersoft.studio.field.label" value="mobile"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="email"/>
+		<property name="com.jaspersoft.studio.field.label" value="email"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="time" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="time"/>
+		<property name="com.jaspersoft.studio.field.label" value="time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="fee" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="fee"/>
+		<property name="com.jaspersoft.studio.field.label" value="fee"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="85" splitType="Stretch">
+		<element kind="staticText" uuid="309b674c-7c9e-4e27-bcd9-d9dde1dc5fca" x="70" y="0" width="333" height="80" fontSize="13.0">
+			<text><![CDATA[University at Buffalo                                                                                  School of Pharmacyand Pharmaceutical Sciences                             ----------------------------------------------------------------------------                                           STUDENT INFORMATION ]]></text>
+		</element>
+	</title>
+	<pageHeader height="18" splitType="Stretch"/>
+	<columnHeader height="30" splitType="Stretch">
+		<element kind="staticText" uuid="0c596d07-a71e-45cd-a098-2312cdfd09ce" x="0" y="0" width="30" height="30">
+			<text><![CDATA[ID]]></text>
+		</element>
+		<element kind="staticText" uuid="39de6455-9b9f-4bdc-b674-8c9f7c277d55" x="30" y="0" width="70" height="30">
+			<text><![CDATA[Name]]></text>
+		</element>
+		<element kind="staticText" uuid="1eaa4f04-e500-4b37-9f77-b3021d0faa16" x="280" y="0" width="170" height="30">
+			<text><![CDATA[E-mail]]></text>
+		</element>
+		<element kind="staticText" uuid="430a12e0-e081-4f63-985f-da54e135041f" x="100" y="0" width="40" height="30">
+			<text><![CDATA[Age]]></text>
+		</element>
+		<element kind="staticText" uuid="86aa42ea-1f31-4b8d-b816-77d770ae481a" x="510" y="0" width="46" height="30">
+			<text><![CDATA[Fee]]></text>
+		</element>
+		<element kind="staticText" uuid="2ade56f2-e9f9-474c-bf6c-cae165ac61e0" x="450" y="0" width="62" height="30">
+			<text><![CDATA[Time]]></text>
+		</element>
+		<element kind="staticText" uuid="eaa7874c-eff4-4b09-9f2f-abc9ea19174f" x="140" y="0" width="70" height="30">
+			<text><![CDATA[Address]]></text>
+		</element>
+		<element kind="staticText" uuid="e6defe99-f9e4-4a11-b7a9-a917d5e31fcf" x="210" y="0" width="70" height="30">
+			<text><![CDATA[Mobile]]></text>
+		</element>
+		<element kind="line" uuid="cf92edf7-ec2f-4511-9954-54b623dc74ff" x="-1" y="19" width="559" height="1"/>
+	</columnHeader>
+	<detail>
+		<band height="43" splitType="Stretch">
+			<element kind="textField" uuid="f3113520-8252-408b-b301-83a57a669aac" x="210" y="6" width="70" height="30" vTextAlign="Middle">
+				<expression><![CDATA[$F{mobile}]]></expression>
+			</element>
+			<element kind="textField" uuid="88c84b56-b77a-469c-ba1b-39d335f96ee6" x="140" y="6" width="70" height="30" vTextAlign="Middle">
+				<expression><![CDATA[$F{address}]]></expression>
+			</element>
+			<element kind="textField" uuid="8432c788-ab0f-4ffd-be09-64a4d156750c" x="100" y="6" width="40" height="30" vTextAlign="Middle">
+				<expression><![CDATA[$F{age}]]></expression>
+			</element>
+			<element kind="textField" uuid="55ccdccb-4863-434e-b852-06fc2918c598" x="30" y="6" width="70" height="30" vTextAlign="Middle">
+				<expression><![CDATA[$F{name}]]></expression>
+			</element>
+			<element kind="textField" uuid="7d6dc4e2-e494-412f-a935-be12a1f6e10f" x="0" y="6" width="30" height="30" vTextAlign="Middle">
+				<expression><![CDATA[$F{id}]]></expression>
+			</element>
+			<element kind="textField" uuid="99cc1edb-aced-49d1-9af1-149f33c31218" x="510" y="6" width="45" height="30" vTextAlign="Middle">
+				<expression><![CDATA[$F{fee}]]></expression>
+			</element>
+			<element kind="textField" uuid="159be81d-f424-4a9b-9745-a79cbae191a6" x="450" y="6" width="60" height="30" vTextAlign="Middle">
+				<expression><![CDATA[$F{time}]]></expression>
+			</element>
+			<element kind="textField" uuid="e52e2fd6-f947-4e93-bf7a-3358c7787c6e" x="280" y="6" width="170" height="30" vTextAlign="Middle">
+				<expression><![CDATA[$F{email}]]></expression>
+			</element>
+			<element kind="line" uuid="1bd1dfa7-c167-453e-8d42-0ae4e35e9737" x="0" y="36" width="555" height="1"/>
+		</band>
+	</detail>
+	<columnFooter height="39" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
